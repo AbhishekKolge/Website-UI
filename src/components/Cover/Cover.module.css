@@ -4,6 +4,7 @@
 
 .wrapper {
     padding-right: 0;
+    padding-left: 0;
 }
 
 .swiper {
@@ -22,6 +23,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 54rem;
+    padding-left: 8rem;
 }
 
 .heading {
@@ -70,10 +72,10 @@
 }
 
 @media only screen and (max-width: 31.25em) {
-
-    .wrapper {
-        padding: 0 8rem;
+    .cover__details {
+        padding-right: 8rem;
     }
+
     .cover__img {
         display: none;
     }

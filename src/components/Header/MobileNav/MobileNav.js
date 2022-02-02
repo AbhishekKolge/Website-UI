@@ -52,6 +52,9 @@ const MobileNav = () => {
               <li onClick={toggleNavHandler}>
                 <Link to='/'>Lorem ipsum</Link>
               </li>
+              <li onClick={toggleNavHandler}>
+                <Link to='/contactform'>Contact Form</Link>
+              </li>
             </ul>
           </motion.nav>
         )}

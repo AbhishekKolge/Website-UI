@@ -63,6 +63,10 @@
   --clr-text--2: #3B3B3B;
   --clr-text--3: #949494;
   --clr-dark: #092852;
+  --clr-error: #d67f7f;
+  --clr-invalid: #911a24;
+  --clr-success: #84da9a;
+  --clr-valid: #08691d;
 }
 
 html {
@@ -93,11 +97,26 @@ a {
 }
 
 input,
+textarea,
 button {
   outline: none;
   font-family: inherit;
   border: none;
   display: block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+textarea {
+  resize: none;
 }
 
 li {
@@ -189,5 +208,16 @@ img {
 @media only screen and (max-width: 56.1875em) {
   html {
       font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 56.1875em) {
+  .swiper-pagination-bullet {
+    background-color: var(--clr-primary);
+    transition: width .2s;
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    height: 1rem;
+    width: 4rem;
   }
 }

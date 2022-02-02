@@ -56,12 +56,16 @@ const Cover = () => {
     <section className={styles.section}>
       <PrimaryWrapper className={styles.wrapper}>
         <Swiper
-          direction={'vertical'}
           slidesPerView={1}
           spaceBetween={0}
           slidesPerGroup={1}
           pagination={{
             clickable: true,
+          }}
+          breakpoints={{
+            899: {
+              direction: 'vertical',
+            },
           }}
           autoplay={{
             delay: 3000,

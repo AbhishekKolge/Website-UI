@@ -39,7 +39,7 @@ const DUMMY_OPTIONS = [
   },
   {
     text: 'Contact us',
-    path: '/',
+    path: '/contactform',
   },
 ];
 
