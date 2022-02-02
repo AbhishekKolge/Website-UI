@@ -1,0 +1,51 @@
+.option__container {
+    position: relative;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.option__container:hover {
+    background-color: var(--clr-secondary);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 4.3rem 2rem;
+}
+
+.header {
+
+}
+
+.icon {
+    font-size: 1.8rem;
+    position: relative;
+    top: .2rem;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    color: var(--clr-text--1);
+    z-index: 50;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    display: grid;
+    background-color: var(--clr-light--4);
+    border-radius: .4rem;
+}
+
+.dropdown__item {
+
+}
+
+.dropdown__link {
+    padding: 1rem;
+}
+
+.dropdown__item:not(:last-child) {
+    border-bottom: .1rem solid var(--clr-light--3);
+}

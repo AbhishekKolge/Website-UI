@@ -1,0 +1,21 @@
+.section {}
+
+.wrapper {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+}
+
+@media only screen and (max-width: 56.1875em) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}

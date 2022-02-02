@@ -1,0 +1,14 @@
+.wrapper {
+    max-width: 1920px;
+    margin: auto;
+    padding-left: 14rem;
+    padding-right: 14rem;
+}
+
+/* 768 */
+@media only screen and (max-width: 56.1875em) {
+    .wrapper {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}

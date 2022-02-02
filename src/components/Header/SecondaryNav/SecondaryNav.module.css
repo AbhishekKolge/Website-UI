@@ -1,0 +1,27 @@
+.nav {
+    font-size: 2rem;
+    color: var(--clr-text--2);
+}
+
+.wrapper {
+    padding-right: 5.3rem;
+}
+
+.options {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.option__item {
+    
+}
+
+.option__link {
+    padding: 1.4rem 2.3rem;
+}
+
+@media only screen and (max-width: 56.1875em) {
+    .nav {
+        display: none;
+    }
+}

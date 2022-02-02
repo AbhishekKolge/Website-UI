@@ -1,0 +1,24 @@
+.section {
+    background-color: var(--clr-light--4);
+}
+
+.wrapper {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 56.1875em) {
+    .wrapper {
+        gap: 4rem;
+        grid-template-columns: 1fr 1fr;;
+    }
+}
+
+@media only screen and (max-width: 31.25em) {
+     .wrapper {
+         grid-template-columns: 1fr;
+     }
+}

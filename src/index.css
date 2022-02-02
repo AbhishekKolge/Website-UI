@@ -1,0 +1,193 @@
+@font-face {
+  font-family: FSAlbert;
+  font-weight: lighter;
+  src: url("./assets/fonts/FSAlbert\ Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: FSAlbert;
+  font-weight: lighter;
+  font-style: italic;
+  src: url("./assets/fonts/FSAlbert\ Thin\ Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: FSAlbert;
+  font-weight: normal;
+  src: url("./assets/fonts/FSAlbert\ Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: FSAlbert;
+  font-weight: normal;
+  font-style: italic;
+  src: url("./assets/fonts/FSAlbert-Italic.otf") format("opentype");
+}
+
+
+@font-face {
+  font-family: FSAlbert;
+  font-weight: 300;
+  src: url("./assets/fonts/FSAlbert\ Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: FSAlbert;
+  font-weight: 300;
+  font-style: italic;
+  src: url("./assets/fonts/FSAlbert\ Light\ Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: FSAlbert;
+  font-weight: 500;
+  src: url("./assets/fonts/FSAlbert-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: FSAlbert;
+  font-weight: 600;
+  src: url("./assets/fonts/FSAlbert-ExtraBold.otf") format("opentype");
+}
+
+:root {
+  --clr-primary: #12406F;
+  --clr-secondary: #0A72B9;
+  --clr-tertiary: #54A0D4;
+  --clr-light--1: #fff;
+  --clr-light--2: #F8F8F8;
+  --clr-light--3: #EBEBEB;
+  --clr-light--4: #F6F6F6;
+  --clr-light--5: #D1D1D1;
+  --clr-text--1: #525252;
+  --clr-text--2: #3B3B3B;
+  --clr-text--3: #949494;
+  --clr-dark: #092852;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 2.2rem;
+  line-height: normal;
+  font-family: 'FSAlbert', sans-serif;
+  color: var(--clr-text--1);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  display: block;
+}
+
+input,
+button {
+  outline: none;
+  font-family: inherit;
+  border: none;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.primary__heading {
+  font-size: 4rem;
+  color: var(--clr-primary);
+  font-weight: 500;
+}
+
+.primary__btn {
+  padding: 1.9rem 3.8rem;
+  border-radius: 2rem;
+  font-weight: 500;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
+  margin-right: 5.3rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--clr-light--1);
+  opacity: 1;
+  width: 1rem;
+  height: 1rem;
+  transition: height .2s;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  height: 2.5rem;
+  border-radius: .5rem;
+  width: .4rem;
+  margin: auto !important;
+}
+
+.swiper-slide {
+  display: flex;
+}
+
+/* 1680 - 1792 */
+@media only screen and (min-width: 105em) and (max-width: 112em) {
+  html {
+      font-size: 60%;
+  }
+}
+
+/* 1536 - 1679 */
+@media only screen and (min-width: 96em) and (max-width: 104.9375em) {
+  html {
+      font-size: 56%;
+  }
+}
+
+/* 1440 - 1535 */
+@media only screen and (min-width: 90em) and (max-width: 95.9375em) {
+  html {
+      font-size: 52%;
+  }
+}
+
+/* 1366 - 1439 */
+@media only screen and (min-width: 85.375em) and (max-width: 89.9375em) {
+  html {
+      font-size: 46%;
+  }
+}
+
+/* 1280 - 1365 */
+@media only screen and (min-width: 80em) and (max-width: 85.3125em) {
+  html {
+      font-size: 40%;
+  }
+}
+
+/* 900- 1279 */
+@media only screen and (min-width: 56.25em) and (max-width: 79.9375em) {
+  html {
+      font-size: 30%;
+  }
+}
+
+/* 768 */
+@media only screen and (max-width: 56.1875em) {
+  html {
+      font-size: 40%;
+  }
+}
